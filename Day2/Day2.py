@@ -1,3 +1,6 @@
+import traceback
+
+
 def ori_check_1(numbers):
     signs = []
     # 找到n-1个元素和下一个元素的大小关系，增加或减少或相等
@@ -143,4 +146,5 @@ if __name__ == "__main__":
 
         print("Result 1:", count)
     except Exception as e:
-        print(e)
+        print(f"Error:{e}")
+        traceback.print_exc()

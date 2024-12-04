@@ -1,3 +1,5 @@
+import traceback
+
 
 def can_trans_to_int(str):
     try:
@@ -70,4 +72,5 @@ if __name__ == "__main__":
                 result += int(pair[0])*int(pair[1])
         print("Result:", result)
     except Exception as e:
-        print(e)
+        print(f"Error:{e}")
+        traceback.print_exc()

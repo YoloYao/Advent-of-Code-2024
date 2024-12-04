@@ -1,3 +1,4 @@
+import traceback
 if __name__ == "__main__":
     try:
         # numbers_1 = [3,4,2,1,3,3]
@@ -25,4 +26,5 @@ if __name__ == "__main__":
         print("Result 1:", result_1)
         print("Result 2:", result_2)
     except Exception as e:
-        print(e)
+        print(f"Error:{e}")
+        traceback.print_exc()
